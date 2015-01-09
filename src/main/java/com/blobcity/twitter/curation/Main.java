@@ -78,7 +78,7 @@ public class Main {
                 Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
             }
             JSONObject jsonObject = new JSONObject(msg);
-//            new Twitter(jsonObject.get("id").toString(), jsonObject.getString("text")).insert();
+            
             atomicRate.count();
 
             if (System.currentTimeMillis() - time > 1000) {
